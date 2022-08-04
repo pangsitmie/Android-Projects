@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout class="androidx.appcompat.app.AlertController$RecycleListView" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RadioButtonActivity2"
+    android:background="@color/primary_blue">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="200dp"
+        android:text="Length: "
+        android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/lengthTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv1"
+        android:layout_toRightOf="@+id/tv1"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="275dp"
+        tools:layout_editor_absoluteY="119dp"
+        android:textColor="@color/white"/>
+
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="20dp"
+        android:text="Width: "
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/widthTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv2"
+        android:layout_toRightOf="@+id/tv2"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="275dp"
+        tools:layout_editor_absoluteY="119dp"
+        android:textColor="@color/white"/>
+
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="20dp"
+        android:text="Area: "
+        android:textColor="@color/white"/>
+    <TextView
+        android:id="@+id/resultTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv3"
+        android:layout_toRightOf="@+id/tv3"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="275dp"
+        tools:layout_editor_absoluteY="119dp"
+        android:textColor="@color/white"/>
+    <Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        android:layout_centerInParent="true"
+        />
+
+
+</RelativeLayout>

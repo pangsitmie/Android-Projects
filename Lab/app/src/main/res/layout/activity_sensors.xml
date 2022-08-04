@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabHostActivity">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/TabWidgetTheme"
+        app:tabSelectedTextColor="@color/primary_blue">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Tab widget to select the tab-->
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary_blue"/>
+
+            <!--FrameLayout which contains the data of the activity-->
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--for tab 1-->
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/primary_blue">
+
+                    <!--Text View for applying the text to the tab-->
+                    <TextView
+                        android:id="@+id/tvAcc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="270dp"
+                        android:text="Accelerometer"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
+                </RelativeLayout>
+
+                <!--for tab 2-->
+                <RelativeLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/primary_blue"
+                    android:orientation="vertical">
+
+                    <!--Text View for applying the text to the tab-->
+                    <TextView
+                        android:id="@+id/tvGyro"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="270dp"
+                        android:layout_centerInParent="true"
+                        android:text="Gyroscope"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+
+                <!--for tab 2-->
+                <RelativeLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/primary_blue"
+                    android:orientation="vertical">
+
+                    <!--Text View for applying the text to the tab-->
+                    <TextView
+                        android:id="@+id/tvLight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="50dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="270dp"
+                        android:layout_centerInParent="true"
+                        android:text="Light Sensor"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+                </RelativeLayout>
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</androidx.appcompat.widget.LinearLayoutCompat>

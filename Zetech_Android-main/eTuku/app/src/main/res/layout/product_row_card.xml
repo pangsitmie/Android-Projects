@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="3dp"
+    android:layout_margin="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/productTitle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="Product Name"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/productDescription"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productTitle"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="Product description"
+            android:textSize="14sp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/productPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="110dp"
+            android:text="Price"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/units"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="110dp"
+            android:layout_toRightOf="@+id/productPrice"
+            android:layout_alignBaseline="@+id/productPrice"
+            android:text="/ 1Kg"
+            android:textSize="13sp"/>
+
+        <ImageView
+            android:id="@+id/productImg"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_alignParentEnd="true"
+            android:src="@mipmap/ic_launcher" />
+
+        <Button
+            android:id="@+id/minBtn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productImg"
+            android:layout_toLeftOf="@+id/qtyText"
+            android:padding="0dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:text="-"
+            android:textColor="@color/green"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/qtyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/addBtn"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignBaseline="@+id/addBtn"
+            android:layout_toLeftOf="@+id/addBtn"
+            android:text="20"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/addBtn"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/productImg"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+
+            android:padding="0dp"
+            android:layout_marginRight="15dp"
+            android:text="+"
+            android:textColor="@color/green"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "180613391898",
+    "project_id": "e-tuku-zetech",
+    "storage_bucket": "e-tuku-zetech.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:180613391898:android:146f1881669c35030ed3a3",
+        "android_client_info": {
+          "package_name": "com.example.e_tuku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "180613391898-2sdvthj5sraii77haa8a8uqqj3qvipg7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_lbNcAI9ZNndfsigYTNHCuxg2ktcDmvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "180613391898-2sdvthj5sraii77haa8a8uqqj3qvipg7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

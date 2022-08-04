@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TabHostActivity">
+
+    <TabHost
+        android:id="@+id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:theme="@style/TabWidgetTheme">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--Tab widget to select the tab-->
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/primary_blue"/>
+
+            <!--FrameLayout which contains the data of the activity-->
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--for tab 1-->
+                <RelativeLayout
+                    android:id="@+id/tab1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/primary_blue">
+
+                    <!--Text View for applying the text to the tab-->
+                    <TextView
+                        android:id="@+id/tvDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="270dp"
+                        android:text="Date"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/dateBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginBottom="40dp"
+                        android:background="@drawable/round_button"
+                        android:backgroundTint="@color/white"
+                        android:text="Select a Date" />
+                </RelativeLayout>
+
+                <!--for tab 2-->
+                <RelativeLayout
+                    android:id="@+id/tab2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/primary_blue"
+                    android:orientation="vertical">
+
+                    <!--Text View for applying the text to the tab-->
+                    <TextView
+                        android:id="@+id/tvTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="270dp"
+                        android:layout_centerInParent="true"
+                        android:text="Time"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+                    <Button
+                        android:id="@+id/timeBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Select a Time"
+                        android:backgroundTint="@color/white"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="40dp"
+                        android:background="@drawable/round_button"
+                        />
+                </RelativeLayout>
+
+                <!--for tab 3-->
+                <RelativeLayout
+                    android:id="@+id/tab3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/primary_blue"
+                    android:orientation="vertical">
+
+                    <!--Text View for applying the text to the tab-->
+                    <ListView
+                        android:id="@+id/lv"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+
+                <!--for tab 4-->
+                <RelativeLayout
+                    android:id="@+id/tab4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/primary_blue"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:id="@+id/picture"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/jeriel"
+                        android:layout_centerInParent="true"/>
+
+                    <!--Text View for applying the text to the tab-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:text="Hello this is me"
+                        android:layout_centerHorizontal="true"
+                        android:layout_below="@id/picture"
+                        android:textColor="#000"
+                        android:textSize="32sp" />
+                </RelativeLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+</androidx.appcompat.widget.LinearLayoutCompat>

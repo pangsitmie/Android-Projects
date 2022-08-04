@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">e-Tuku</string>
+    <string-array name="vegestables">
+        <item>Kubis</item>
+        <item>Brokoli</item>
+        <item>Sawi</item>
+        <item>Bayam</item>
+        <item>Kangkung</item>
+        <item>Buncis</item>
+    </string-array>
+
+    <string-array name="descriptions">
+        <item>This is a description</item>
+        <item>This is a description</item>
+        <item>This is a description</item>
+        <item>This is a description</item>
+        <item>This is a description</item>
+        <item>This is a description</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

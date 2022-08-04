@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fragment 3"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_margin="50dp"/>
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="100dp"
+        android:src="@drawable/ic_3"
+        android:tint="@color/primary_blue"
+        tools:ignore="UseAppTint" />
+
+</RelativeLayout>

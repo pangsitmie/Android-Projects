@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RANDOM INTEGER GENERATOR"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <TextView
+            android:id="@+id/startTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:text="Start:"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/startET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/startTV"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/startTV"
+            android:hint="Enter a number"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <TextView
+            android:id="@+id/endTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/startTV"
+            android:layout_alignLeft="@+id/startTV"
+            android:layout_marginTop="20dp"
+            android:paddingTop="5dp"
+            android:text="End:"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/endET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/startET"
+            android:layout_alignTop="@+id/endTV"
+            android:layout_toRightOf="@+id/endTV"
+            android:hint="Enter a number"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <!--    count-->
+        <TextView
+            android:id="@+id/countTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/endTV"
+            android:layout_alignLeft="@+id/startTV"
+            android:layout_marginTop="20dp"
+            android:paddingTop="5dp"
+            android:text="Count:"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/countET"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/endET"
+            android:layout_alignTop="@+id/countTV"
+            android:layout_toRightOf="@+id/countTV"
+            android:hint="Enter a number"
+            android:inputType="number" />
+
+        <!--        toggle-->
+        <Switch
+            android:id="@+id/swRepeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/countTV"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:text="Repeat"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnRandom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/swRepeat"
+            android:layout_alignLeft="@+id/endET"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/swRepeat"
+            android:inputType="number"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="Generate"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/swRepeat"
+            android:paddingTop="10dp"
+            android:text="Repeat switch means there can be a duplicate random number that is generated" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rel1"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/resultTV"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+</RelativeLayout>
